@@ -6,6 +6,7 @@ from fastapi import HTTPException, UploadFile
 from config import LOG_STORE, ALLOWED_EXTENSIONS, DB_FILE_PATH, LOG_STORE_PATH, LOG_LEVELS
 import pandas as pd
 from datetime import datetime
+from math import ceil
 
 
 ############# DB Models ################################
@@ -46,7 +47,8 @@ def is_valid_log_file(file: UploadFile):
 
 ##################    API Functions ########################
 
-def fetch_logs(level: Optional[str] = None, component: Optional[str] = None, start_time: Optional[str]=None, end_time: Optional[str]=None):
+def fetch_logs(level: Optional[str] = None, component: Optional[str] = None, start_time: Optional[str]=None, end_time: Optional[str]=None, skip: int = 0,
+    limit: int = 10):
 
     if not os.path.exists(DB_FILE_PATH):
      raise HTTPException(status_code=404, detail=f"Database file '{DB_FILE_PATH}' not found")
@@ -84,7 +86,16 @@ def fetch_logs(level: Optional[str] = None, component: Optional[str] = None, sta
             logs = [log for log in logs if datetime.strptime(log.timestamp, "%Y-%m-%d %H:%M:%S") <= end_dt]
         except ValueError:
             raise HTTPException(status_code=400, detail="Invalid end_time format. Use 'YYYY-MM-DD HH:MM:SS'")
-    return logs
+    total = len(logs)
+    total_pages = ceil(total / limit) if total > 0 else 1
+    current_page = (skip // limit) + 1
+
+    return {
+        "data": logs[skip: skip + limit],
+        "total": total,
+        "current_page": current_page,
+        "total_pages": total_pages
+    }
 
 
 

@@ -14,6 +14,9 @@ LOG_STORE_PATH = os.path.join(BASE_DIR, LOG_STORE)
 # allowed log file extentions 
 ALLOWED_EXTENSIONS = [".txt",".log"]
 
+# for auth
+USERS = [{"username":"rushikesh","password":"Test@123"}]
+
 
 
 
