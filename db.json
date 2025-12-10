@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2025-05-07 10:00:00",
+    "level": "INFO",
+    "component": "UserAuth",
+    "message": "User 'john.doe' logged in successfully."
+  },
+  {
+    "id": 2,
+    "timestamp": "2025-05-07 10:00:15",
+    "level": "WARNING",
+    "component": "GeoIP",
+    "message": "Could not resolve IP address '192.168.1.100'."
+  },
+  {
+    "id": 3,
+    "timestamp": "2025-05-07 10:00:20",
+    "level": "ERROR",
+    "component": "Payment",
+    "message": "Transaction failed for user 'jane.doe'."
+  },
+  {
+    "id": 4,
+    "timestamp": "2025-05-07 10:00:25",
+    "level": "INFO",
+    "component": "UserAuth",
+    "message": "User 'alice.smith' logged out."
+  },
+  {
+    "id": 5,
+    "timestamp": "2025-05-07 10:01:00",
+    "level": "ERROR",
+    "component": "Database",
+    "message": "Failed to connect to database 'db_prod'."
+  },
+  {
+    "id": 6,
+    "timestamp": "2025-05-07 10:01:15",
+    "level": "WARNING",
+    "component": "Payment",
+    "message": "Payment gateway response delayed."
+  },
+  {
+    "id": 7,
+    "timestamp": "2025-05-07 10:02:00",
+    "level": "ERROR",
+    "component": "Scheduler",
+    "message": "Scheduled task execution Failed."
+  }
+]
