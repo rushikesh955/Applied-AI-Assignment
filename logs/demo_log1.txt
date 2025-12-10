@@ -1,0 +1,44 @@
+Timestamp	Level	Component	Message
+2025-05-07 10:00:00	INFO	UserAuth	User 'john.doe' logged in successfully.
+2025-05-07 10:00:15	WARNING	GeoIP	Could not resolve IP address '192.168.1.100'.
+2025-05-07 10:00:20	ERROR	Payment	Transaction failed for user 'jane.doe'.
+2025-05-07 10:00:25	INFO	UserAuth	User 'alice.smith' logged out.
+2025-05-07 10:01:00	ERROR	Database	Failed to connect to database 'db_prod'.
+2025-05-07 10:01:15	WARNING	Payment	Payment gateway response delayed.
+2025-05-07 10:02:00	INFO	Scheduler	Scheduled task 'backup' completed.
+2025-05-07 10:02:30	INFO	UserAuth	User 'bob.smith' logged in successfully.
+2025-05-07 10:03:00	ERROR	GeoIP	Invalid IP address '10.0.0.1'.
+2025-05-07 10:03:20	WARNING	Database	Query execution slow.
+2025-05-07 10:03:40	INFO	Payment	User 'jane.doe' made a payment successfully.
+2025-05-07 10:04:00	INFO	UserAuth	User 'alice.smith' logged in successfully.
+2025-05-07 10:04:15	WARNING	Scheduler	Task 'cleanup' took too long.
+2025-05-07 10:04:30	ERROR	UserAuth	Failed login attempt for user 'admin'.
+2025-05-07 10:05:00	INFO	Database	Database backup completed.
+2025-05-07 10:05:20	INFO	GeoIP	IP '192.168.1.101' resolved successfully.
+2025-05-07 10:05:40	WARNING	Payment	Payment gateway timeout.
+2025-05-07 10:06:00	ERROR	Scheduler	Task 'email_sender' failed.
+2025-05-07 10:06:20	INFO	UserAuth	User 'john.doe' logged out.
+2025-05-07 10:06:40	INFO	UserAuth	User 'bob.smith' logged out.
+2025-05-07 10:07:00	WARNING	Database	Slow query detected.
+2025-05-07 10:07:20	ERROR	GeoIP	Unable to resolve IP '172.16.0.1'.
+2025-05-07 10:07:40	INFO	Payment	User 'alice.smith' made a payment successfully.
+2025-05-07 10:08:00	INFO	UserAuth	User 'jane.doe' logged in successfully.
+2025-05-07 10:08:20	WARNING	Scheduler	Task 'report_generator' delayed.
+2025-05-07 10:08:40	ERROR	Database	Database connection lost.
+2025-05-07 10:09:00	INFO	GeoIP	IP '10.0.0.2' resolved successfully.
+2025-05-07 10:09:20	INFO	UserAuth	User 'admin' logged in successfully.
+2025-05-07 10:09:40	WARNING	Payment	Payment processing slow.
+2025-05-07 10:10:00	ERROR	UserAuth	Unauthorized access attempt.
+2025-05-07 10:10:20	INFO	Scheduler	Task 'cleanup' completed.
+2025-05-07 10:10:40	INFO	UserAuth	User 'john.doe' logged in successfully.
+2025-05-07 10:11:00	WARNING	GeoIP	Could not resolve IP '192.168.1.102'.
+2025-05-07 10:11:20	ERROR	Payment	Payment failed for user 'bob.smith'.
+2025-05-07 10:11:40	INFO	UserAuth	User 'alice.smith' logged out.
+2025-05-07 10:12:00	INFO	Database	Database optimized successfully.
+2025-05-07 10:12:20	WARNING	Scheduler	Task 'email_sender' delayed.
+2025-05-07 10:12:40	ERROR	UserAuth	Login failed for user 'jane.doe'.
+2025-05-07 10:13:00	INFO	Payment	User 'john.doe' made a payment successfully.
+2025-05-07 10:13:20	INFO	UserAuth	User 'bob.smith' logged in successfully.
+2025-05-07 10:13:40	WARNING	GeoIP	IP '10.0.0.3' could not be resolved.
+2025-05-07 10:14:00	ERROR	Database	Database write failed.
+2025-05-07 10:14:20	INFO	Scheduler	Scheduled task 'backup' completed.
